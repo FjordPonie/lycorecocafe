@@ -1,0 +1,21 @@
+div.header.box{
+    background-color: antiquewhite;
+    padding: 30px;
+    margin: 10px;
+    display: inline-block;
+    max-width: 400px;
+}
+
+div.parent.box{
+    background-color: antiquewhite;
+    padding: 30px;
+    display: inline-block;
+    max-width: 400px;
+}
+
+img.autism{
+    float: right;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
