@@ -1,23 +1,18 @@
-name: Deploy to neocities
-
-on:
-  push:
-    branches:
-      - main # Change to name of branch you're deploying from
-
-concurrency:
-  group: deploy-to-neocities
-  cancel-in-progress: true
+name: 'Deploy'
+on: [push]
 
 jobs:
   deploy:
+    name: 'Deploy to Neocities'
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Deploy to neocities
-      uses: bcomnes/deploy-to-neocities@v1
-      with:
-        api_token: ${{ secrets.NEOCITIES_API_KEY }}
-        cleanup: false
-        dist_dir: public # Change to fold your site is in, it's set to the root by default
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - run: npm install
+      - run: npm run build
+      - uses: kognise/neocities-deploy-action@v1
+        with:
+          neocities_token: ${{ secrets.NEOCITIES_TOKEN }}
+          directory: 'out/'
