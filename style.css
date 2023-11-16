@@ -1,19 +1,20 @@
 div.nav{
     border-radius: 100px;
     border: 10px solid rgb(189, 66, 53);
-    background-color: antiquewhite;
+    background-color: rgb(255, 251, 240);
     padding: 40px;
     margin: 10px;
     display: inline-block;
     max-width: 200px;
+    position:relative;
 }
 div.container{
-    background-color: antiquewhite;
+    background-color: rgb(255, 251, 240);
     padding: 40px;
     margin: 10px;
-    display: inline-flex;
     border-radius: 100px;
     border: 10px solid rgb(189, 66, 53);
+    position:relative;
 
 
 
@@ -22,11 +23,20 @@ div.container{
 div.containermain{
     border-radius: 100px;
     border: 10px solid rgb(189, 66, 53);
-    background-color: rgb(220, 185, 151);
+    background-color: antiquewhite;
     padding: 40px;
     margin: 10px;
-    display: inline-flex;
+    position:relative;
+    width: fit-content;
+    block-size: fit-content;
 
+    
+
+}
+
+h1{
+    font-size: 70px;
+    color: brown;
 }
 
 ul{
@@ -42,44 +52,79 @@ div.innerbox{
     max-height: 500px;
     border-radius: 100px;
     border: 10px solid rgb(189, 66, 53);
+    position:relative;
+    max-width:100%;
+    height:auto;
 }
 
 img{
     margin: 10px;
     border-radius: 150px;
     border: 10px solid rgb(189, 66, 53);
+    
 }
 
 }
 
 header{
     background-color: rgb(255, 248, 239);
-    text-align: center;
     padding: 40px;
     border-radius: 50px;
     border: 5px solid rgb(189, 66, 53);
     margin: 30px;
-    max-height: 300px;
     padding:30px;
+  
+    position:relative;
 }
 
 p{
-    padding: 40px;
+    
     margin: 10px;
 
 }
 
 div.header{
     display: inline-flex;
-
+    max-width:100%;
 }
 
-div.bottom{
+div.footer{
     padding: 40px;
     margin: 10px;
     background-color: rgb(255, 251, 240);
     flex: 1;
     max-height: 500px;
-    border-radius: 150px;
+    border-radius: 100px;
     border: 10px solid rgb(189, 66, 53);
+    position:absolute;
 }
+
+div.inviscontainer{
+    align-items: center;
+    position:relative;
+}
+
+a:link,  a:visited {
+    text-decoration: none;
+    background-color: rgb(189, 66, 53);
+    font-size: 20px;
+    color:antiquewhite;
+    text-align: center;
+  }
+  
+  
+  a:hover, a:active {
+    text-decoration: underline;
+    background-color: rgb(189, 66, 53);
+    font-size: 20px;
+    color: antiquewhite;
+    text-align: center;
+  }
+  
+  div.button{
+    padding: 40px;
+    margin: 10px;
+    background-color: rgb(189, 66, 53);
+  border-radius: 100px;
+  border: 10px solid rgb(189, 66, 53);
+    }
