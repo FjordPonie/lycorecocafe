@@ -11,10 +11,11 @@ div.nav{
 div.container{
     background-color: rgb(255, 251, 240);
     padding: 40px;
-    margin: 10px;
+    margin: 30px;
     border-radius: 100px;
     border: 10px solid rgb(189, 66, 53);
-    position:relative;
+
+    
 
 
 
@@ -28,7 +29,6 @@ div.containermain{
     margin: 10px;
     position:relative;
     width: fit-content;
-    block-size: fit-content;
 
     
 
@@ -49,12 +49,12 @@ div.innerbox{
     margin: 10px;
     background-color: rgb(255, 251, 240);
     flex: 1;
-    max-height: 500px;
     border-radius: 100px;
     border: 10px solid rgb(189, 66, 53);
     position:relative;
     max-width:100%;
     height:auto;
+    
 }
 
 img{
@@ -66,7 +66,7 @@ img{
 
 }
 
-header{
+div.header{
     background-color: rgb(255, 248, 239);
     padding: 40px;
     border-radius: 50px;
@@ -74,7 +74,7 @@ header{
     margin: 30px;
     padding:30px;
   
-    position:relative;
+   
 }
 
 p{
@@ -100,8 +100,7 @@ div.footer{
 }
 
 div.inviscontainer{
-    align-items: center;
-    position:relative;
+   
 }
 
 a:link,  a:visited {
