@@ -1,18 +1,21 @@
-name: 'Deploy'
-on: [push]
+name: Deploy to neocities
+
+# only run on changes to main
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   deploy:
-    name: 'Deploy to Neocities'
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12'
-      - run: npm install
-      - run: npm run build
-      - uses: kognise/neocities-deploy-action@v1
-        with:
-          neocities_token: ${{ secrets.NEOCITIES_TOKEN }}
-          directory: 'out/'
+    - uses: actions/checkout@v1
+    # When the dist_dir is ready, deploy it to neocities
+    - name: Deploy to neocities
+      uses: bcomnes/deploy-to-neocities@v1
+      with:
+        api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
+        cleanup: false
+        dist_dir: public
