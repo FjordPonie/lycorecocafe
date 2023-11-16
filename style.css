@@ -1,54 +1,85 @@
 div.nav{
+    border-radius: 100px;
+    border: 10px solid rgb(189, 66, 53);
     background-color: antiquewhite;
-    padding: 30px;
+    padding: 40px;
     margin: 10px;
     display: inline-block;
     max-width: 200px;
-
-
 }
 div.container{
     background-color: antiquewhite;
-    padding: 30px;
+    padding: 40px;
     margin: 10px;
     display: inline-flex;
+    border-radius: 100px;
+    border: 10px solid rgb(189, 66, 53);
 
 
 
 }
 
 div.containermain{
-    background-color: rgb(198, 137, 76);
-    padding: 30px;
+    border-radius: 100px;
+    border: 10px solid rgb(189, 66, 53);
+    background-color: rgb(220, 185, 151);
+    padding: 40px;
     margin: 10px;
     display: inline-flex;
 
 }
 
 ul{
-    padding: 30px;
+    padding: 40px;
     margin: 10px;
 }
 
 div.innerbox{
-    padding: 30px;
+    padding: 40px;
     margin: 10px;
     background-color: rgb(255, 251, 240);
     flex: 1;
     max-height: 500px;
+    border-radius: 100px;
+    border: 10px solid rgb(189, 66, 53);
 }
 
-img.chisato{
-    border: 10px dotted;
-    width: 300px;
-    border-radius: 10;
-    margin-left: auto;
-    margin-right: auto;
+img{
+    margin: 10px;
+    border-radius: 150px;
+    border: 10px solid rgb(189, 66, 53);
+}
+
+}
+
+header{
+    background-color: rgb(255, 248, 239);
+    text-align: center;
+    padding: 40px;
+    border-radius: 50px;
+    border: 5px solid rgb(189, 66, 53);
+    margin: 30px;
+    max-height: 300px;
+    padding:30px;
+}
+
+p{
+    padding: 40px;
+    margin: 10px;
 
 }
 
 div.header{
-    background-color: antiquewhite;
-    border: 10px dotted;
-    border-color:rgb(198, 137, 76)
+    display: inline-flex;
+
+}
+
+div.bottom{
+    padding: 40px;
+    margin: 10px;
+    background-color: rgb(255, 251, 240);
+    flex: 1;
+    max-height: 500px;
+    border-radius: 150px;
+    border: 10px solid rgb(189, 66, 53);
 }
