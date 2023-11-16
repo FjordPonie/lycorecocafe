@@ -1,21 +1,54 @@
-div.header.box{
+div.nav{
     background-color: antiquewhite;
     padding: 30px;
     margin: 10px;
     display: inline-block;
-    max-width: 400px;
-}
+    max-width: 200px;
 
-div.parent.box{
+
+}
+div.container{
     background-color: antiquewhite;
     padding: 30px;
-    display: inline-block;
-    max-width: 400px;
+    margin: 10px;
+    display: inline-flex;
+
+
+
 }
 
-img.autism{
-    float: right;
-    width: 200px;
-    padding: 10px;
+div.containermain{
+    background-color: rgb(198, 137, 76);
+    padding: 30px;
     margin: 10px;
+    display: inline-flex;
+
+}
+
+ul{
+    padding: 30px;
+    margin: 10px;
+}
+
+div.innerbox{
+    padding: 30px;
+    margin: 10px;
+    background-color: rgb(255, 251, 240);
+    flex: 1;
+    max-height: 500px;
+}
+
+img.chisato{
+    border: 10px dotted;
+    width: 300px;
+    border-radius: 10;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+div.header{
+    background-color: antiquewhite;
+    border: 10px dotted;
+    border-color:rgb(198, 137, 76)
 }
